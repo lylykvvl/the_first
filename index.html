@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">   
+</head>
+<body>
+<div id="cursor"></div>
+<div class="container">
+	<svg width="610" height="728" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M139.416 31.465C-159.248 309.376 101.471 367.764 214.964 1 336.277 136.37 767.08 317.52 345.08 103.2c249.464 421.158 298.621 150.841 244.533 624.277" stroke="#2828BD"/class="container-image"></svg>
+    <div class="header-panel">
+        <div class="logo"><a href="#" class="header-logo">Logo Logo</a></div>
+        <div class="sandwich">
+            <input type="checkbox" class="sandwich__checkbox" id="menu1">
+            	<div class="sandwich-box sandwich__sandwich-box">
+            		<div class="sandwich-box__line"></div>
+            	</div>
+            	<label for="menu1" class="sandwich__menu">
+            		<nav class="menu">
+            			<a href="#"class="menu-link">Commercial</a>
+            			<a href="#"class="menu-link">Editorial</a>
+            			<a href="#"class="menu-link">Reportage</a>
+            			<a href="#"class="menu-link">Meet Me</a>
+            		</nav>
+            	</label>
+            </div>
+            </div>
+    </div>
+    <main class="main-panel">
+    	<div class="image-item-1">
+    	</div>
+    	<div class="image-item-2">
+    		<img src="img/image1.png" class="image-slider-2" alt="">
+    	</div>
+    	<div class="image-item-3">
+    	</div>
+    <div class="sliders" data-title="Drag me">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Ink Lingerie</div>
+                <div class="swiper-slide">Ink Lingerie</div>
+                <div class="swiper-slide">Ink Lingerie</div>
+            </div>
+        </div>
+    </div>
+ 	</main>
+    <footer>
+    	<div class="footer-panel">
+        <p class="footer-text">Ins</p>
+            <div class="footer-line"></div>
+        <p class="footer-sub-text">Fb</p>
+        </div>
+    </footer>
+</div>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+ <script>
+    var swiper = new Swiper('.swiper-container', {
+
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        loop: true,
+        clickable: true,
+      },
+      breakpoints: {
+    375: {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 20
+    },
+    414: {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 40
+    },
+    1024: {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 40
+    },
+    1440: {
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 40
+    },
+  }
+})
+  </script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
